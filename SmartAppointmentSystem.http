@@ -1,0 +1,6 @@
+@SmartAppointmentSystem_HostAddress = http://localhost:5274
+
+GET {{SmartAppointmentSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
