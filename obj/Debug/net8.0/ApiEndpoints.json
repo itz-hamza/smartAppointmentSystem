@@ -1,12 +1,81 @@
 [
   {
     "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetBookingsForDoctor",
+    "RelativePath": "api/Booking/getBookingsForDoctor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
     "Method": "GetAllAsync",
     "RelativePath": "api/Doctor/getall",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetBookingsWithReviews",
+    "RelativePath": "api/Doctor/getBookingsWithReviews",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetDetailedBookings",
+    "RelativePath": "api/Doctor/getDetailedBookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetDoctorInfo",
+    "RelativePath": "api/Doctor/getDoctorInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -21,6 +90,27 @@
         "Name": "doctorRequest",
         "Type": "SmartAppointmentSystem.DTOs.DoctorRequestDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "UpdateBookingStatus",
+    "RelativePath": "api/Doctor/updateBookingStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "newStatus",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
