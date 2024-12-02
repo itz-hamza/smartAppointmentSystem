@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetAllAsync",
+    "RelativePath": "api/Doctor/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
+    "Method": "Add",
+    "RelativePath": "api/Doctor/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorRequest",
+        "Type": "SmartAppointmentSystem.DTOs.DoctorRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/doctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SmartAppointmentSystem.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.LoginController",
+    "Method": "LoginPatient",
+    "RelativePath": "api/Login/patient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SmartAppointmentSystem.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartAppointmentSystem.Controllers.PatientController",
+    "Method": "RegisterPatient",
+    "RelativePath": "api/Patient/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientRequest",
+        "Type": "SmartAppointmentSystem.DTOs.PatientRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartAppointmentSystem.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

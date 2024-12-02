@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\source\\repos\\SmartAppointmentSystem\\SmartAppointmentSystem.csproj": {}
+    "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\source\\repos\\SmartAppointmentSystem\\SmartAppointmentSystem.csproj": {
+    "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\source\\repos\\SmartAppointmentSystem\\SmartAppointmentSystem.csproj",
+        "projectUniqueName": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
         "projectName": "SmartAppointmentSystem",
-        "projectPath": "C:\\Users\\hamza\\source\\repos\\SmartAppointmentSystem\\SmartAppointmentSystem.csproj",
-        "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\source\\repos\\SmartAppointmentSystem\\obj\\",
+        "projectPath": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
+        "packagesPath": "C:\\Users\\cc\\.nuget\\packages\\",
+        "outputPath": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -56,6 +60,10 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -63,6 +71,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.2.1, )"
             }
           },
           "imports": [
