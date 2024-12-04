@@ -23,7 +23,7 @@ namespace SmartAppointmentSystem.Controllers
             _context = context;
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         [Route("api/[controller]/getall")]
         public async Task<IActionResult> GetAllAsync()
@@ -82,9 +82,9 @@ namespace SmartAppointmentSystem.Controllers
                 return Convert.ToBase64String(hash);
             }
         }
-
+        [Authorize]
         [HttpGet]
-        [Route("api/Booking/getBookingsForDoctor")]
+        [Route("api/Booking/getBookingsWithStatus")]
         public async Task<IActionResult> GetBookingsForDoctor(int doctorId, Status? status = null)
         {
             try
@@ -125,10 +125,10 @@ namespace SmartAppointmentSystem.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
+        [Authorize]
         [HttpGet]
-        [Route("api/[controller]/getDetailedBookings")]
-        public async Task<IActionResult> GetDetailedBookings(int doctorId)
+        [Route("api/[controller]/getBookings")]
+        public async Task<IActionResult> GetDetailedBookingsWithoutReviews(int doctorId)
         {
             try
             {
@@ -141,12 +141,7 @@ namespace SmartAppointmentSystem.Controllers
                         DoctorPrice = b.Doctor.Price,
                         PatientName = b.Patient.FirstName + " " + b.Patient.LastName,
                         BookingDescription = b.Description,
-                        BookingStatus = b.Status.ToString(),
-                        Reviews = b.Reviews.Select(r => new
-                        {
-                            ReviewDescription = r.Description,
-                            ReviewStars = r.Stars
-                        }).ToList()
+                        BookingStatus = b.Status.ToString()
                     })
                     .ToListAsync();
 
@@ -164,6 +159,8 @@ namespace SmartAppointmentSystem.Controllers
             }
         }
 
+
+        [Authorize]
         [HttpGet]
         [Route("api/[controller]/getBookingsWithReviews")]
         public async Task<IActionResult> GetBookingsWithReviews(int doctorId)
@@ -199,6 +196,7 @@ namespace SmartAppointmentSystem.Controllers
                 return StatusCode(500, "Internal server error.");
             }
         }
+        [Authorize]
         [HttpPut]
         [Route("api/[controller]/updateBookingStatus")]
         public async Task<IActionResult> UpdateBookingStatus(int bookingId, Status newStatus)
@@ -229,7 +227,7 @@ namespace SmartAppointmentSystem.Controllers
                 return StatusCode(500, "Internal server error.");
             }
         }
-
+        [Authorize]
         [HttpGet]
         [Route("api/[controller]/getDoctorInfo")]
         public async Task<IActionResult> GetDoctorInfo(int doctorId)

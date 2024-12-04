@@ -2,7 +2,7 @@
   {
     "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
     "Method": "GetBookingsForDoctor",
-    "RelativePath": "api/Booking/getBookingsForDoctor",
+    "RelativePath": "api/Booking/getBookingsWithStatus",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -32,8 +32,8 @@
   },
   {
     "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
-    "Method": "GetBookingsWithReviews",
-    "RelativePath": "api/Doctor/getBookingsWithReviews",
+    "Method": "GetDetailedBookingsWithoutReviews",
+    "RelativePath": "api/Doctor/getBookings",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,8 +48,8 @@
   },
   {
     "ContainingType": "SmartAppointmentSystem.Controllers.DoctorController",
-    "Method": "GetDetailedBookings",
-    "RelativePath": "api/Doctor/getDetailedBookings",
+    "Method": "GetBookingsWithReviews",
+    "RelativePath": "api/Doctor/getBookingsWithReviews",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
