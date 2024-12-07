@@ -37,7 +37,7 @@ namespace SmartAppointmentSystem.Authentication
             );
 
             // Create the JWT token
-            var token = new JwtSecurityToken(
+            var token = new JwtSecurityToken( 
                 issuer: jwtSettings["Issuer"],
                 audience: jwtSettings["Audience"],
                 claims: claims,

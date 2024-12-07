@@ -103,8 +103,10 @@ using (var scope = app.Services.CreateScope())
     var services = scope.ServiceProvider;
 
     var context = services.GetRequiredService<SmartAppointmentSystemContext>();
+    Console.WriteLine("checking if db exists");
     context.Database.EnsureCreated();
      DbInitializer.Initialize(context);
+    Console.WriteLine("Db created");
 }
 
 app.UseHttpsRedirection();

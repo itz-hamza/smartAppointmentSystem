@@ -6,6 +6,7 @@ using SmartAppointmentSystem.DTOs;
 using SmartAppointmentSystem.Data;
 using SmartAppointmentSystem.Models;
 using System.Text;
+using System.Security.Claims;
 
 namespace SmartAppointmentSystem.Controllers
 {
@@ -85,10 +86,28 @@ namespace SmartAppointmentSystem.Controllers
         [Authorize]
         [HttpGet]
         [Route("api/Booking/getBookingsWithStatus")]
-        public async Task<IActionResult> GetBookingsForDoctor(int doctorId, Status? status = null)
+        public async Task<IActionResult> GetBookingsForDoctor(Status? status = null)
         {
             try
             {
+                var DoctorEmail = HttpContext.User.FindFirst(ClaimTypes.Email);
+
+                if (DoctorEmail == null)
+                {
+                    return NotFound("Doctor's email does not exist");
+                }
+                string email = DoctorEmail.Value;
+
+                var doctor = await _context.Doctors
+              .FirstOrDefaultAsync(p => p.Email == email);
+
+                if (doctor == null)
+                {
+                    return NotFound("No doctor record found for the given email.");
+                }
+
+                var doctorId = doctor.Id;
+
                 // Fetch bookings with filtering by doctor ID and optional status
                 var query = _context.Bookings
                     .Include(b => b.Doctor)
@@ -128,10 +147,28 @@ namespace SmartAppointmentSystem.Controllers
         [Authorize]
         [HttpGet]
         [Route("api/[controller]/getBookings")]
-        public async Task<IActionResult> GetDetailedBookingsWithoutReviews(int doctorId)
+        public async Task<IActionResult> GetDetailedBookingsWithoutReviews()
         {
             try
             {
+                var DoctorEmail = HttpContext.User.FindFirst(ClaimTypes.Email);
+
+                if (DoctorEmail == null)
+                {
+                    return NotFound("Doctor's email does not exist");
+                }
+                string email = DoctorEmail.Value;
+
+                var doctor = await _context.Doctors
+              .FirstOrDefaultAsync(p => p.Email == email);
+
+                if (doctor == null)
+                {
+                    return NotFound("No doctor record found for the given email.");
+                }
+
+                var doctorId = doctor.Id;
+
                 var result = await _context.Bookings
                     .Where(b => b.DoctorId == doctorId)
                     .Select(b => new
@@ -163,10 +200,28 @@ namespace SmartAppointmentSystem.Controllers
         [Authorize]
         [HttpGet]
         [Route("api/[controller]/getBookingsWithReviews")]
-        public async Task<IActionResult> GetBookingsWithReviews(int doctorId)
+        public async Task<IActionResult> GetBookingsWithReviews()
         {
             try
             {
+                var DoctorEmail = HttpContext.User.FindFirst(ClaimTypes.Email);
+
+                if (DoctorEmail == null)
+                {
+                    return NotFound("Doctor's email does not exist");
+                }
+                string email = DoctorEmail.Value;
+
+                var doctor = await _context.Doctors
+              .FirstOrDefaultAsync(p => p.Email == email);
+
+                if (doctor == null)
+                {
+                    return NotFound("No doctor record found for the given email.");
+                }
+
+                var doctorId = doctor.Id;
+
                 var result = await _context.Bookings
                     .Where(b => b.DoctorId == doctorId && b.Reviews.Any()) // Filter for bookings that have reviews
                     .Select(b => new
@@ -230,10 +285,28 @@ namespace SmartAppointmentSystem.Controllers
         [Authorize]
         [HttpGet]
         [Route("api/[controller]/getDoctorInfo")]
-        public async Task<IActionResult> GetDoctorInfo(int doctorId)
+        public async Task<IActionResult> GetDoctorInfo()
         {
             try
             {
+
+                var DoctorEmail = HttpContext.User.FindFirst(ClaimTypes.Email);
+
+                if (DoctorEmail == null)
+                {
+                    return NotFound("Doctor's email does not exist");
+                }
+                string email = DoctorEmail.Value;
+
+                var Doctor = await _context.Doctors
+              .FirstOrDefaultAsync(p => p.Email == email);
+
+                if (Doctor == null)
+                {
+                    return NotFound("No doctor record found for the given email.");
+                }
+
+                var doctorId = Doctor.Id;
                 // Fetch the doctor details from the database using the doctorId
                 var doctor = await _context.Doctors
                     .Where(d => d.Id == doctorId)
@@ -262,9 +335,59 @@ namespace SmartAppointmentSystem.Controllers
                 _logger.LogError(ex, "An error occurred while fetching doctor information.");
                 return StatusCode(500, "Internal server error.");
             }
+
+         
+
         }
 
+        [Authorize]
+        [HttpGet]
+        [Route("/api/[controller]/getReviews")]
+        public async Task<IActionResult> GetReviews()
+        {
+            try
+            {
+                var DoctorEmail = HttpContext.User.FindFirst(ClaimTypes.Email);
 
+                if (DoctorEmail == null)
+                {
+                    return NotFound("Doctor's email does not exist");
+                }
+                string email = DoctorEmail.Value;
+
+                var doctor = await _context.Doctors
+              .FirstOrDefaultAsync(p => p.Email == email);
+
+                if (doctor == null)
+                {
+                    return NotFound("No doctor record found for the given email.");
+                }
+
+                var reviews = await _context.Reviews
+                    .Include(r => r.Booking)
+                    .Where(r => r.Booking.DoctorId == doctor.Id)
+                    .Select(r => new
+                    {
+                        r.Id,
+                        r.Description,
+                        r.Stars,
+                        BookingId = r.BookingId
+                    }).ToListAsync();
+
+                if (reviews.Count() == 0)
+                {
+                    return NotFound("No reviews found for the given doctor.");
+                }
+
+                return Ok(reviews);
+
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while fetching Reviews.");
+                return StatusCode(500, "Internal server error.");
+            }
+        }
 
 
 
