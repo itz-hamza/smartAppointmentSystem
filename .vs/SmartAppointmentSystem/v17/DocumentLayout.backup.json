@@ -86,9 +86,9 @@
               "Title": "DoctorController.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
-              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\DoctorController.cs*",
-              "RelativeToolTip": "Controllers\\DoctorController.cs*",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAiwFYAAAA0AAAAAAAAAA==",
+              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T18:06:32.671Z",
               "EditorCaption": ""
@@ -151,8 +151,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAEAAABAMzMzMzMrwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T16:24:51.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T16:24:51.498Z"
             },
             {
               "$type": "Document",
@@ -164,8 +163,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-30T16:10:42.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T16:10:42.137Z"
             },
             {
               "$type": "Document",

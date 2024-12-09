@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\smartappointmentsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:smartappointmentsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:dtos\\patientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\smartappointmentsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:smartappointmentsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|e:\\fast\\csharp\\project\\smartappointmentsystem\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A27E9E14-8D45-4A06-864E-3F2709504372}|SmartAppointmentSystem.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -78,48 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DoctorController.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
               "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAiwH0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAIwCIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T18:06:32.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
-              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\LoginDTO.cs",
-              "RelativeToolTip": "DTOs\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T19:25:44.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Models\\Doctor.cs",
-              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Doctor.cs",
-              "RelativeToolTip": "Models\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T09:07:10.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Review.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
@@ -131,19 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "PatientController.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
               "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\PatientController.cs",
               "RelativeToolTip": "Controllers\\PatientController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwD0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T12:50:47.77Z"
+              "WhenOpened": "2024-12-02T12:50:47.77Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -151,12 +128,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAEAAABAMzMzMzMrwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T16:24:51.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T16:24:51.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -164,12 +140,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-30T16:10:42.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T16:10:42.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DoctorRequestDTO.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\DoctorRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\DoctorRequestDTO.cs",
@@ -181,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
@@ -193,7 +168,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "SmartAppointmentSystem.csproj",
+              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
+              "RelativeDocumentMoniker": "SmartAppointmentSystem.csproj",
+              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
+              "RelativeToolTip": "SmartAppointmentSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-30T16:30:14.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor.cs",
+              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T09:07:10.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T19:25:44.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Patient.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Patient.cs",
               "RelativeDocumentMoniker": "Models\\Patient.cs",
@@ -205,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Booking.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "Models\\Booking.cs",
@@ -217,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SmartAppointmentSystemContext.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Data\\SmartAppointmentSystemContext.cs",
               "RelativeDocumentMoniker": "Data\\SmartAppointmentSystemContext.cs",
@@ -229,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "PatientRequestDTO.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\DTOs\\PatientRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\PatientRequestDTO.cs",
@@ -241,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
@@ -250,18 +262,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T19:25:36.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SmartAppointmentSystem.csproj",
-              "DocumentMoniker": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
-              "RelativeDocumentMoniker": "SmartAppointmentSystem.csproj",
-              "ToolTip": "E:\\fast\\csharp\\Project\\smartAppointmentSystem\\SmartAppointmentSystem.csproj",
-              "RelativeToolTip": "SmartAppointmentSystem.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-30T16:30:14.714Z"
             },
             {
               "$type": "Document",
